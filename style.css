@@ -23,6 +23,8 @@
 html {
     box-sizing: border-box;
     font-size: 100%;
+    scroll-behavior: smooth;
+    background-color: rgb(30,30,30);
 }
 
 *,
@@ -42,19 +44,13 @@ html {
     
 }
 
-.body2 { margin: 20px;
+.body2 { 
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    background-color: var(--bg-body);
+    font-weight: 300;
     color: var(--text1);
     font-size: 16px;
 }
 
-.rounded_underline {
-    border-bottom: 2px solid rgb(255, 255, 255); /* sets the thickness and color of the underline */
-    border-radius: 1px; /* rounds the corners of the underline */ /* ensures that the underline is only as wide as the text */
-    padding-bottom: 1px; /* adds some space between the text and the underline */
-  }
 
 
 a {
@@ -87,6 +83,8 @@ a:hover{
 /* HEADER */
 .header {
     margin-top: -10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
 }
 
 .header__nav{
@@ -105,13 +103,11 @@ a:hover{
  color: var(--text1);
  text-decoration: none;
  flex: 1 0 100%;
- margin-top: -30px;
 }
 
 
 .header__social svg {
     display: block;
-    margin-bottom: 30px;
 }
 
 .header__social > svg > path {
@@ -135,6 +131,15 @@ a:hover{
         margin-inline-end:auto;
     }
 }
+
+.rounded_underline {
+    border-bottom: 1px solid rgb(255, 255, 255); /* sets the thickness and color of the underline */
+    border-radius: 1px; /* rounds the corners of the underline */ /* ensures that the underline is only as wide as the text */
+    padding-bottom: 5px; /* adds some space between the text and the underline */
+
+  }
+
+
 
 .container {
     display: flex;
