@@ -1,0 +1,163 @@
+
+  
+
+:root {
+    --bg-body: rgb(30,30,30);
+    --bg-contact: hsl(0, 0%, 14%);
+    --accent: hsl(209, 91%, 58%);
+    --text1: hsl(0, 0%, 100%);
+    --text2: hsl(0, 0%, 85%);
+    --invalid: hsl(7, 100%, 68%);
+    --fs-18: 1.125rem;
+    --fs-88: 5.5rem;
+    --fs-72: 4.5rem;
+    --fs-40: 2.5rem; 
+    --fs-48: 3rem;
+    --fs-32: 2rem;
+    --fs-24: 1.5rem;
+    --container: 69.375rem;
+    --transition: 250ms ease-in-out;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.body1 {
+    margin: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    background-color: var(--bg-body);
+    color: var(--text1);
+    font-size: 16px;
+    line-height: 1.56;
+    
+}
+
+.body2 { margin: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    background-color: var(--bg-body);
+    color: var(--text1);
+    font-size: 16px;
+}
+
+.rounded_underline {
+    border-bottom: 2px solid rgb(255, 255, 255); /* sets the thickness and color of the underline */
+    border-radius: 1px; /* rounds the corners of the underline */ /* ensures that the underline is only as wide as the text */
+    padding-bottom: 1px; /* adds some space between the text and the underline */
+  }
+
+
+a {
+    transition: color var(--transition);
+}
+
+.visually-hidden {
+    position:absolute;
+    left: -1000000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+a:hover{
+    color: var(--accent);
+}
+
+
+
+.wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+/* 600 px */  
+
+/* HEADER */
+.header {
+    margin-top: -10px;
+}
+
+.header__nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 20px 25px;
+}
+
+
+.header__home {
+ font-size: 1.5rem;
+ font-size: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);
+ line-height: 1;
+ color: var(--text1);
+ text-decoration: none;
+ flex: 1 0 100%;
+ margin-top: -30px;
+}
+
+
+.header__social svg {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.header__social > svg > path {
+    transition: fill var(--transition);
+}
+
+.header__social:hover > svg > path {
+    fill: var(--accent);
+}
+
+@media (min-width: 37.5rem) {
+    .header__nav {
+        justify-content: flex-start;
+        align-items: center;
+        text-align:left;
+        gap: 32px;
+    }
+
+    .header__home {
+        flex: 1;
+        margin-inline-end:auto;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .text {
+    flex: 1;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+  }
+  
+  .image {
+    flex: 0 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .image {
+      max-width: 100%;
+    }
+  }
+
+
+
+
+
