@@ -19,6 +19,16 @@
     --transition: 250ms ease-in-out;
 
 }
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
 
 html {
     box-sizing: border-box;
@@ -80,9 +90,26 @@ a:hover{
 
 /* 600 px */  
 
+.home__logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+@media (max-width: 768px) {
+    .home__logo {
+      display: none;
+    }
+  }
+  
+
+
+
 /* HEADER */
 .header {
-    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
 }
@@ -93,21 +120,21 @@ a:hover{
     justify-content: center;
     text-align: center;
     gap: 20px 25px;
+    
 }
 
 
 .header__home {
- font-size: 1.5rem;
- font-size: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);
- line-height: 1;
  color: var(--text1);
- text-decoration: none;
- flex: 1 0 100%;
+ font-family: 'Inter', sans-serif;
+ margin-top: 5px;
 }
+
 
 
 .header__social svg {
     display: block;
+    
 }
 
 .header__social > svg > path {
@@ -129,6 +156,7 @@ a:hover{
     .header__home {
         flex: 1;
         margin-inline-end:auto;
+        
     }
 }
 
@@ -160,6 +188,49 @@ a:hover{
     .image {
       max-width: 100%;
     }
+  }
+
+  .bubbles-container {
+    display: flex; /* Use a flexbox container to align the bubbles */
+    flex-wrap: wrap; /* Wrap the bubbles to a new line when they overflow */
+  }
+
+  .bubble {
+    background-color: #2a2424;
+    border-radius: 50px;
+    padding: 10px;
+    display: inline-block;
+    min-width: 50px; /* Set a minimum width */
+    max-width: 80%; /* Set a maximum width */
+    margin: 5px;
+  }
+  
+  .bubble p {
+    margin: 0;
+    font-size:small
+  }
+  
+  .panels-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  
+  .panel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  
+  .panel img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .panel:hover img {
+    transform: scale(1.5);
   }
 
 
