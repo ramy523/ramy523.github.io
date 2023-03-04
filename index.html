@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <title>Ramy Hammam | Developer Portfolio</title>
 </head>
@@ -17,8 +17,17 @@
 
 
 <div class="home__logo fade-in">
-    <img src="assets/images/eyelogo.png" alt="eyelogo" width="80" height="80">
+    <img src="assets/images/eyelogo.png" alt="eyelogo" id="eye-logo" width="80" height="80">
 </div>
+<script>
+    const image = document.getElementById('eye-logo');
+    image.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
 
 
     <header class="header fade-in">
@@ -51,7 +60,7 @@
                   <h1 class="Hey"> &#128075; Hey!</h1>
                   <p class="body2"> 
                     My name is Ramy Hammam and welcome to my portfolio.
-                    I am a brand identity designer working with startups and small businesses worldwide to build brands and products that stick. I love working in small, highly collaborative teams facing complex design and business problems.<br><br>                  
+                    hurr durr hudrrdee huadhud huduauduaud huaududu hausdonaindod iandiaondioand noaindisdinsdni huruafhufhufahfuaf huuuuurrrr durrrrhududhusaudhua.<br><br>                  
                     Here’s my email: ramyhammam5@gmail.com<br><br>           
                     Don’t be a stranger.
                     <br>
@@ -64,19 +73,25 @@
             </div>
             <div class="bubbles-container">
             <div class="bubble"> 
-                <p>HTML: example text example text example text example text example text example text </p>
+                <p>HTML: <span class="star">&starf;&starf;&starf;&starf;&starf;</span> </p>
             </div>
             <div class="bubble"> 
-                <p>CSS: example text example text</p>
+                <p>CSS: <span class="star">&starf;&starf;&starf;&starf;&starf;</span></p>
             </div>
             <div class="bubble"> 
-                <p>Javascript Frameworks: example text example text</p>
+                <p>JS Frameworks (React, Node.js, Next.js):   <span class="star">&starf;&starf;&starf;&starf;</span></p> 
             </div>
             <div class="bubble"> 
-                <p>Swift: example text example text example text example text</p>
+                <p>Swift:  <span class="star">&starf;&starf;&starf;&starf;</p>
             </div>
             <div class="bubble"> 
-                <p>Git: example text example text example text example text</p>
+                <p>Git:  <span class="star">&starf;&starf;&starf;&starf;&starf;</p>
+            </div>
+            <div class="bubble"> 
+                <p>Python: <span class="star">&starf;&starf;&starf;</p>
+            </div>
+            <div class="bubble"> 
+                <p>C++: <span class="star">&starf;&starf;&starf;</p>
             </div>
         </div>
         </section>
@@ -93,23 +108,28 @@
                         <img src="assets/images/copwatch.png">
                       </div>
                     </a>
+                  
                     <a href="page2.html">
                       <div class="panel">
                         <img src="assets/images/copwatch.png">
                       </div>
                     </a>
+                   
                     <a href="page3.html">
                       <div class="panel">
                         <img src="assets/images/copwatch.png">
                       </div>
                     </a>
+                    
                     <a href="page3.html">
                         <div class="panel">
                           <img src="assets/images/copwatch.png">
                         </div>
                       </a>
-                  </div>              
+                    
+                  </div>     
         </div>
+        <p></p>
         </section>
         <br>
         <br>
